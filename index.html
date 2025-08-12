@@ -76,24 +76,6 @@
     </audio>
     
     <script>
-        // Fungsi untuk memulai audio
-        function playAudio() {
-            const audio = document.getElementById('scaryAudio');
-            
-            // Coba memainkan audio otomatis
-            const playPromise = audio.play();
-        
-                    
-                    // Aktifkan audio saat pengguna mengklik
-                    document.body.addEventListener('click', () => {
-                        audio.play();
-                        startScare();
-                    }, { once: true });
-                });
-            } else {
-                startScare();
-            }
-        }
         
         // Fungsi untuk memulai efek menakutkan
         function startScare() {
@@ -126,3 +108,4 @@
 </body>
 
 </html>
+
