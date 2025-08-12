@@ -82,11 +82,7 @@
             
             // Coba memainkan audio otomatis
             const playPromise = audio.play();
-            
-            // Jika autoplay diblokir, tampilkan pesan
-            if (playPromise !== undefined) {
-                playPromise.catch(error => {
-                    document.getElementById('loading').textContent = "Klik dimanapun di halaman ini untuk memulai audio!";
+        
                     
                     // Aktifkan audio saat pengguna mengklik
                     document.body.addEventListener('click', () => {
@@ -128,4 +124,5 @@
         };
     </script>
 </body>
+
 </html>
